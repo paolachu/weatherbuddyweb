@@ -29,11 +29,11 @@ A aplicação é composta por um backend desenvolvido em Java com o framework Sp
 ### Passos para Configuração
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/usuario/nome-do-repositorio.git
+    git clone https://github.com/paolachu/weatherbuddyweb.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd nome-do-repositorio
+    cd weatherbuddyweb
     ```
 3. Compile e construa o projeto:
     ```sh
