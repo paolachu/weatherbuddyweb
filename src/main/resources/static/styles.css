@@ -1,0 +1,160 @@
+/* Estilos do index */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, background-image 0.5s;
+    background-image: url('img/fundo.jpeg'); /* Caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff; /* Ajuste a cor do texto para ser visível sobre a imagem de fundo */
+}
+
+header {
+    background: rgba(34, 34, 34, 0.8); /* Fundo semitransparente */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff;
+    background: linear-gradient(to right, #222, #444, #666);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#current-weather-data, #forecast-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: "Poppins", sans-serif;
+}
+
+#city-input::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #999;
+}
+
+#search-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+#search-button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+i.wi {
+    margin: 10px 0;
+}
+
+/* Estilos para a previsão do tempo por data */
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 0;
+}
+
+.forecast-item {
+    flex: 0 0 auto;
+    width: 150px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Ocultar seções inicialmente */
+#current-weather,
+#forecast {
+    display: none;
+}
+
+/* Estilos para diferentes climas */
+.clear {
+    background-color: #87CEEB;
+    color: #000;
+}
+
+.cloudy {
+    background-color: #B0C4DE;
+    color: #000;
+}
+
+.rainy {
+    background-color: #708090;
+    color: #fff;
+}
+
+.snowy {
+    background-color: #FFFafa;
+    color: #000;
+}
+
+/* Estilos para diferentes horários */
+.day {
+    background-image: linear-gradient(to bottom, #B0E0E6, #ADD8E6);
+}
+
+.night {
+    background-image: linear-gradient(to bottom, #2c3e50, #4c5c68);
+}

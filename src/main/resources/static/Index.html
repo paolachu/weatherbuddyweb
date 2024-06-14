@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherBuddy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+</head>
+<body>
+<header>
+    <h1>Previsão do Tempo</h1>
+</header>
+<main>
+    <section id="search">
+        <input type="text" id="city-input" placeholder="Digite o nome da cidade">
+        <button id="search-button">Pesquisar</button>
+    </section>
+    <section id="current-weather">
+        <h2>Condições Atuais</h2>
+        <div id="current-weather-data"></div>
+    </section>
+    <section id="forecast">
+        <h2>Previsão de 5 dias</h2>
+        <div id="forecast-data"></div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
